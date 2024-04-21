@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarelo:#FEF200;
+    --amareloEscuro:#615c00;
+    --brancoTransparente:#ffffff8c;
+    --preto:black;
+    --azul:#072E3F;
+
+}
+
+body{
+    font-family: 'Poppins';
+    background-image:url(https://i.pinimg.com/originals/b6/e2/5e/b6e25ea66a912bc4d2d1c6f18147c0cd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card{
+    background-color:var(--brancoTransparente);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color:var(--preto);
+    margin-bottom: 20px;
+    transition: all .3s ease-out;
+
+}
+
+h1:hover{
+    color:var(--amarelo);
+}
+
+.label-form input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0px;
+    border-bottom: 2px solid var(--preto);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    gap: 10%;
+}
+
+.label-form{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.label-form input:focus{
+    border-bottom: 2px solid var(--amarelo);
+}
+
+.label-form label{
+    color: black;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top:13px;
+    transition: all .3s ease-out;
+}
+
+.label-form input:focus + label{
+    font-size: 13px;
+    margin-top: 0px;
+    color: var(--amarelo);
+}
+
+button{
+    background-color: transparent;
+    border: solid var(--preto);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-out;
+    width: 90px;
+}
+
+button:hover{
+    background-color: transparent;
+    border: solid 3px var(--amarelo);
+    color: var(--amareloEscuro);
+    width: 90px;
+}
+
+.button{
+    justify-content: center;
+    display: flex;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 20px;
+    color: var(--preto);
+    border: solid 1px;
+}
+
+p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: bold;
+}
+
+a:hover{
+    transition: all .3s ease-out;
+    color: var(--amarelo);
+}
+
+@media screen and (max-width:390px){
+
+    body{
+        background-image: url(https://i.pinimg.com/originals/8d/cb/02/8dcb0278d4daca02737960234cd0cfbd.jpg);
+    }
+    .card{
+        width: 350px;
+    }
+
+    a:hover{
+        transition: all .3s ease-out;
+        color: var(--amareloEscuro);
+    }
+
+    button:hover{
+        background-color: transparent;
+        border: solid 3px var(--amareloEscuro);
+        color: var(--preto);
+        width: 90px;
+    }
+
+    .label-form input:focus + label{
+        font-size: 13px;
+        margin-top: 0px;
+        color: var(--amareloEscuro);
+    }
+
+    .label-form input:focus{
+        border-bottom: 2px solid var(--amareloEscuro);
+    }
+
+    h1:hover{
+        color:var(--amareloEscuro);
+    }
+
+
+    
+}

@@ -6,7 +6,135 @@
     box-sizing: border-box;
 }
 
+:root{
+    --amarelo:#FEF200;
+    --amareloEscuro:#615c00;
+    --brancoTransparente:#ffffff8c;
+    --preto:black;
+    --azul:#072E3F;
+
+}
+
 body{
     font-family: 'Poppins';
+    background-image:url(https://i.pinimg.com/originals/b6/e2/5e/b6e25ea66a912bc4d2d1c6f18147c0cd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.card{
+    background-color:var(--brancoTransparente);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color:var(--preto);
+    margin-bottom: 20px;
+    transition: all .3s ease-out;
+
+}
+
+h1:hover{
+    color:var(--amareloEscuro);
+}
+
+.label-form input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0px;
+    border-bottom: 2px solid var(--preto);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    gap: 10%;
+}
+
+.label-form{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.label-form input:focus{
+    border-bottom: 2px solid var(--amareloEscuro);
+}
+
+.label-form label{
+    font-weight: bold;
+    color: black;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top:13px;
+    transition: all .3s ease-out;
+}
+
+.label-form input:focus + label,
+.label-form input:valid + label{
+    font-size: 13px;
+    margin-top: 0px;
+    color: var(--amareloEscuro);
+}
+
+button{
+    background-color: transparent;
+    border: solid var(--preto);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-out;
+    width: 150px;
+}
+
+button:hover{
+    font-weight: bold;
+    background-color: transparent;
+    border: solid 3px var(--amareloEscuro);
+    color: var(--amareloEscuro);
+    width: 150px;
+}
+
+.button{
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and (max-width: 390px) {
+    
+    body{
+        background-image: url(https://i.pinimg.com/originals/c3/aa/ef/c3aaefa9258ac7998da4679ab5ed7e6f.jpg);
+    }
+    
+    button{
+        width: 250px;
+    }
+    button:hover{
+        font-weight: bold;
+        background-color: transparent;
+        border: solid 3px var(--amareloEscuro);
+        color: var(--amareloEscuro);
+        width: 250px;
+    }
+    
 }

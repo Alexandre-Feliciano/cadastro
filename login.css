@@ -46,7 +46,7 @@ h1{
 }
 
 h1:hover{
-    color:var(--amarelo);
+    color:var(--amareloEscuro);
 }
 
 .label-form input{
@@ -72,10 +72,11 @@ h1:hover{
 }
 
 .label-form input:focus{
-    border-bottom: 2px solid var(--amarelo);
+    border-bottom: 2px solid var(--amareloEscuro);
 }
 
 .label-form label{
+    font-weight: bold;
     color: black;
     pointer-events: none;
     position: absolute;
@@ -85,10 +86,12 @@ h1:hover{
     transition: all .3s ease-out;
 }
 
-.label-form input:focus + label{
+.label-form input:focus + label,
+.label-form input:valid + label{
     font-size: 13px;
     margin-top: 0px;
-    color: var(--amarelo);
+    color: var(--amareloEscuro);
+
 }
 
 button{
@@ -101,14 +104,15 @@ button{
     cursor: pointer;
     outline: none;
     transition: all .3s ease-out;
-    width: 90px;
+    width: 150px;
 }
 
 button:hover{
+    font-weight: bold;
     background-color: transparent;
-    border: solid 3px var(--amarelo);
+    border: solid 3px var(--amareloEscuro);
     color: var(--amareloEscuro);
-    width: 90px;
+    width: 150px;
 }
 
 .button{
@@ -136,13 +140,13 @@ a{
 
 a:hover{
     transition: all .3s ease-out;
-    color: var(--amarelo);
+    color: var(--amareloEscuro);
 }
 
 @media screen and (max-width:390px){
 
     body{
-        background-image: url(https://i.pinimg.com/originals/8d/cb/02/8dcb0278d4daca02737960234cd0cfbd.jpg);
+        background-image: url(https://i.pinimg.com/originals/c3/aa/ef/c3aaefa9258ac7998da4679ab5ed7e6f.jpg);
     }
     .card{
         width: 350px;
@@ -156,8 +160,12 @@ a:hover{
     button:hover{
         background-color: transparent;
         border: solid 3px var(--amareloEscuro);
-        color: var(--preto);
-        width: 90px;
+        color: var(--amareloEscuro);
+        width: 150px;
+    }
+
+    bottom{
+        width: 150px ;
     }
 
     .label-form input:focus + label{

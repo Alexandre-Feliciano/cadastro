@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
 </head>
 <body>
 
@@ -11,58 +13,48 @@
 
         <form class="card">
 
-            <h1>Cadastre-se</h1>
+            <h1>Cadastrar</h1>
 
             <div class="label-form">
 
-                <input type="text" id="email"  name="nome" placeholder="">
-                <label for="text" id="nome">Nome</label>
+                <input type="text" id="nome"  name="nome" placeholder="" required>
+                <label for="nome" id="LabelNome">Nome</label>
                 
             </div>
 
             <div class="label-form">
 
-                <input type="text" id="nome"  name="nome" placeholder="">
-                <label for="text" id="email">Email</label>
+                <input type="text" id="usuario"  name="email" placeholder="" required>
+                <label for="email" id="LabelUsuario">Usuário</label>
                 
             </div>
 
             <div class="label-form">
 
-                <input type="number" id="telefone"  name="telefone" placeholder="">
-                <label for="text" id="telefone">telefone</label>
+                <input type="number" id="telefone"  name="telefone" placeholder="" required>
+                <label for="telefone" id="LabelTelefone">telefone</label>
 
             </div>
 
             <div class="label-form">
 
-                <input type="number" id="senha"  name="senha" placeholder="">
-                <label for="text" id="senha">Senha</label>
+                <input type="number" id="senha"  name="senha" placeholder="" required>
+                <label for="senha" id="LabelSenha">Senha</label>
 
             </div>
 
             <div class="label-form">
 
-                <input type="number" id="senha"  name="senha" placeholder="">
-                <label for="text" id="Confirmar_senha">Confimar Senha</label>
+                <input type="number" id="ConfirmarSenha"  name="ConfirmarSenha" placeholder="" required>
+                <label for="Confirmar_senha" id="LabelConfirmarSenha">Confimar Senha</label>
 
             </div>
-
-            
-            
+           
             <div class="button">
             
-                <button>Entrar</button>
+                <button onclick="cadastrar()">Cadastre-se</button>
 
             </div>
-
-            
-
-
-
-
-
-
 
         </form>
 

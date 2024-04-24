@@ -7,32 +7,10 @@
 }
 
 :root{
+   
     --brancoTransparente:#ffffff8c;
     --preto:black;
     --azul:#072E3F;
-    --vermelho:#ff0000;
-    --vermelhoClaro:#ffbbbb;
-    --verde:#00bb00;
-    --verdeClaro:#bbffbe;
-
-}
-#msgError{
-    text-align: center;
-    color: var(--vermelho);
-    background-color: var(--vermelhoClaro);
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
-    
-}
-
-#msgSucess{
-    text-align: center;
-    color: var(--verde);
-    background-color:var(--verdeClaro) ;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
 
 }
 
@@ -68,7 +46,7 @@ h1{
 }
 
 h1:hover{
-    color:var(--azul);
+    color:var(--amareloEscuro);
 }
 
 .label-form input{
@@ -94,7 +72,7 @@ h1:hover{
 }
 
 .label-form input:focus{
-    border-bottom: 2px solid var(--azul);
+    border-bottom: 2px solid var(--amareloEscuro);
 }
 
 .label-form label{
@@ -112,7 +90,7 @@ h1:hover{
 .label-form input:valid + label{
     font-size: 13px;
     margin-top: 0px;
-    color: var(--azul);
+    color: var(--amareloEscuro);
 }
 
 button{
@@ -131,8 +109,8 @@ button{
 button:hover{
     font-weight: bold;
     background-color: transparent;
-    border: solid 3px var(--azul);
-    color: var(--azul);
+    border: solid 3px var(--amareloEscuro);
+    color: var(--amareloEscuro);
     width: 150px;
 }
 
@@ -153,13 +131,9 @@ button:hover{
     button:hover{
         font-weight: bold;
         background-color: transparent;
-        border: solid 3px var(--azul);
-        color: var(--azul);
+        border: solid 3px var(--amareloEscuro);
+        color: var(--amareloEscuro);
         width: 250px;
     }
-
-    
-
-
     
 }

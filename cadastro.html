@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="cadastro.css">
-    <script src="cadastro.js"></script>
 </head>
 <body>
 
@@ -14,6 +13,10 @@
         <form class="card">
 
             <h1>Cadastrar</h1>
+
+            <div id="msgError"></div>
+
+            <div id="msgSucess"></div>
 
             <div class="label-form">
 
@@ -25,7 +28,7 @@
             <div class="label-form">
 
                 <input type="text" id="usuario"  name="email" placeholder="" required>
-                <label for="email" id="LabelUsuario">Usuário</label>
+                <label for="text" id="LabelUsuario">Usuário</label>
                 
             </div>
 
@@ -40,25 +43,26 @@
 
                 <input type="number" id="senha"  name="senha" placeholder="" required>
                 <label for="senha" id="LabelSenha">Senha</label>
-
+                
             </div>
-
+            
             <div class="label-form">
-
+                
                 <input type="number" id="ConfirmarSenha"  name="ConfirmarSenha" placeholder="" required>
                 <label for="Confirmar_senha" id="LabelConfirmarSenha">Confimar Senha</label>
-
+                
             </div>
-           
-            <div class="button">
             
+            <div class="button">
+                
                 <button onclick="cadastrar()">Cadastre-se</button>
-
+                
             </div>
-
+            
         </form>
-
+        
     </div>
     
 </body>
+<script src="cadastro.js"></script>
 </html>

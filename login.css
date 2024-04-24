@@ -11,7 +11,8 @@
     --amareloEscuro:#615c00;
     --brancoTransparente:#ffffff8c;
     --preto:black;
-    --azul:#072E3F;
+    --azul:#0a2e3d;
+    --azulClaro:#86FFFF;
 
 }
 
@@ -46,7 +47,7 @@ h1{
 }
 
 h1:hover{
-    color:var(--amareloEscuro);
+    color:var(--azul);
 }
 
 .label-form input{
@@ -72,7 +73,7 @@ h1:hover{
 }
 
 .label-form input:focus{
-    border-bottom: 2px solid var(--amareloEscuro);
+    border-bottom: 2px solid var(--azul);
 }
 
 .label-form label{
@@ -90,7 +91,7 @@ h1:hover{
 .label-form input:valid + label{
     font-size: 13px;
     margin-top: 0px;
-    color: var(--amareloEscuro);
+    color: var(--azul);
 
 }
 
@@ -110,8 +111,8 @@ button{
 button:hover{
     font-weight: bold;
     background-color: transparent;
-    border: solid 3px var(--amareloEscuro);
-    color: var(--amareloEscuro);
+    border: solid 3px var(--azul);
+    color: var(--azul);
     width: 150px;
 }
 
@@ -140,7 +141,7 @@ a{
 
 a:hover{
     transition: all .3s ease-out;
-    color: var(--amareloEscuro);
+    color: var(--azul);
 }
 
 @media screen and (max-width:390px){
@@ -154,13 +155,13 @@ a:hover{
 
     a:hover{
         transition: all .3s ease-out;
-        color: var(--amareloEscuro);
+        color: var(--azul);
     }
 
     button:hover{
         background-color: transparent;
-        border: solid 3px var(--amareloEscuro);
-        color: var(--amareloEscuro);
+        border: solid 3px var(--azul);
+        color: var(--azul);
         width: 150px;
     }
 
@@ -171,15 +172,15 @@ a:hover{
     .label-form input:focus + label{
         font-size: 13px;
         margin-top: 0px;
-        color: var(--amareloEscuro);
+        color: var(--azul);
     }
 
     .label-form input:focus{
-        border-bottom: 2px solid var(--amareloEscuro);
+        border-bottom: 2px solid var(--azul);
     }
 
     h1:hover{
-        color:var(--amareloEscuro);
+        color:var(--azul);
     }
 
 
